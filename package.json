@@ -1,15 +1,18 @@
 {
   "name": "preentrega03-popa",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/style.scss css/main.css" , "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "sass": "sass",
+		"sass:watch": "sass --watch scss/main.scss  css/estilo.css"
+
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "sass": "^1.66.1"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
