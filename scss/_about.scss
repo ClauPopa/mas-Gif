@@ -1,0 +1,74 @@
+%header-general
+
+%body-styles
+
+.texto-descriptivo {
+    background-color: rgba(212, 200, 20, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.custom-carousel {
+    border-radius: 10px;
+    margin: 30px 12px;
+    overflow: hidden;
+}
+
+/* las imágenes del carrusel */
+.custom-carousel .carousel-inner img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #f0cd06;
+}
+
+.inicio-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/*  video de fondo */
+.video-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+}
+
+h2 {
+    color: #eee239;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+h3 {
+    color: #eee239;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.texto-descriptivo {
+    background-color: rgba(54, 54, 54, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.texto-descriptivo h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.texto-descriptivo p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgb(252, 248, 210);
+}

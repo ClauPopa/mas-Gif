@@ -1,0 +1,86 @@
+@media (min-width: 768px) {
+    .contacto-container {
+        text-align: center;
+
+        .contacto-container .row {
+            justify-content: space-between;
+
+            .contacto-container .col-lg-6 {
+                width: 48%;
+                margin-right: 2%;
+
+                .contacto-container .form-group {
+                    margin-bottom: 20px;
+
+                    .contacto-container .btn {
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/*  formulario */
+
+/* Estilos para la imagen */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin: 16px;
+}
+
+
+
+/* Estilos para el formulario */
+#contact-form {
+    background-color: #e7c014;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px $terciary-color;
+    margin: 16px;
+
+
+    h2.mb-4 {
+        color: $terciary-color;
+        font-size: $textXxl;
+        font-weight: 400;
+        font-weight: bold;
+
+        .form-group label {
+            font-size: $textXl;
+            font-family: $font-poppins;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+#contact-form .btn {
+    margin-top: 15px;
+    transition: background-color 0.3s ease-in-out;}
+
+    .btn-primary {
+        background-color: #ca7607;
+        border-color: #f1e312;
+        font-size: 1.5rem;
+        margin: 3px;
+        padding: 8px;
+        color: $terciary-color;
+
+    }
+
+        .btn-secondary {
+            background-color: #ca7607;
+            border-color: #f1e312;
+            font-size: 1.5rem;
+            margin: 3px;
+            padding: 8px;
+            color: $terciary-color;}
+
+            .btn:hover {
+                background-color: #e0ae09;}
+      

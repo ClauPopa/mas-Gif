@@ -1,0 +1,48 @@
+
+h1 
+.titulo {
+    @include textoTitulo(24px);
+  }
+  
+  .subtitulo {
+    @include textoTitulo(18px);
+  }
+  
+     
+        
+   
+
+h2 {
+    color: $primary-color;
+    margin-bottom: $margin-bottom;
+    font-size:$font-size-base;
+}
+
+h3 {
+    color:$primary-color;
+    margin-bottom: $margin-bottom;
+    font-size: $font-size-base;
+}
+
+
+
+footer {
+    background-image: url(../img/FOTOSLOCAL/fondoAmarillo.jpg);
+    margin: 5px;
+    padding: 15px 0;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 3rem;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../img/FOTOSLOCAL/negroRadora.jpg);
+    font-size:$font-size-base;
+    margin: 0px;
+    padding: 0px;
+}

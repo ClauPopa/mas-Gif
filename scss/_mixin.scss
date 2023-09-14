@@ -1,0 +1,12 @@
+// extend
+
+
+// mixing
+@mixin textoTitulo($size) {
+  font-size: $size;
+  font-weight: bold;
+  color: $primary-color;
+  margin: 50%;
+}
+
+

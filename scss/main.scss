@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5% !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&family=Roboto:wght@100&display=swap');
+@import "_vars";
+@import "_mixin";
+@import "_comun";
+@import "_navs";
+@import "_about";
+@import "_novedades";
+@import "_productos";
+@import "_ubicacion";
+@import "_contacto";

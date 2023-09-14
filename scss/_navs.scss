@@ -1,0 +1,84 @@
+// Nesting
+.container-fluid {
+    margin-top: 0.5px;
+    background-image: url(../img/FOTOSLOCAL/amaritriangulo.jpg);
+    border-radius: 1rem;
+    border-bottom: 8px $hover-bg #e0ae09 solid;
+    a {
+        font-size: $textXl;
+        font-weight: bold;
+        margin-right: 60px;
+        color:$primary-color;
+    }
+    .logo {
+        width: $logo-width;
+    }
+
+    .fuentesNav {
+        font-size: $textXxl;
+        padding-left: 3rem;
+        display: flex;
+        justify-content: left;
+        font-family: 'Roboto', sans-serif;
+       
+    }
+
+    @media screen and (max-width: 576px) {
+        .fuentesNav {
+            font-size: $textXxl;
+            padding-right: 5%;
+         
+        }
+    }
+
+    .nav-link active {
+        color: $primary-color;
+
+        .nav-link {
+            color: $secondary-color;
+        }
+
+
+    }
+
+    .paraCelular .navbar-toggler-icon {
+        background-color: $primary-color;
+
+        width: 3rem;
+        height: 3rem;
+    }
+
+    @media screen and (max-width: 576px) {
+        .paraCelular .navbar-nav .nav-link {
+            font-size: 14px;
+        }
+    }
+
+    .navbar {
+        margin-bottom: 15px;
+        .navbar-nav .nav-link {
+            font-size: 3rem;
+            color: $secondary-color;
+    
+    }
+}
+
+    .menuTotal {
+        font-size: 1rem;
+        padding-left: 2rem;
+        display: flex;
+    }
+
+   
+
+    .dropdown-item {
+        font-size: 2rem;
+        background-color: $primary-color;
+    }
+
+    .redes-sociales {
+        margin-top: 30px;
+     
+    }
+
+}
