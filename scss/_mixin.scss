@@ -2,9 +2,27 @@
 
 
 // mixing
-
+// contacto
 @mixin textoTitulo($size) {
   font-size: $size;
   font-weight: bold;
 }
+//about
+@mixin estilo-compartido {
+  background-image: url(../img/FOTOSLOCAL/fondoAtodo.svg);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 16px;
 
+  & h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  & p {
+    font-size: 15px, $fontW,$font-poppins;
+    line-height: 1.8;
+    color: rgb(238, 236, 219);
+        
+  }
+}

@@ -42,9 +42,10 @@ footer {
   text-align: center;
   padding: 5px;
   font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   border-radius: 3rem;
+  color: rgb(14, 13, 13);
 }
 
 body {
@@ -119,13 +120,27 @@ body {
   margin-top: 30px;
 }
 
+.texto-descriptivo {
+  background-image: url(../img/FOTOSLOCAL/fondoAtodo.svg);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 16px;
+}
+.texto-descriptivo h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.texto-descriptivo p {
+  font-size: 15px, bold, "Poppins", sans-serif;
+  line-height: 1.8;
+  color: rgb(238, 236, 219);
+}
+
 .custom-carousel {
   border-radius: 10px;
   margin: 30px 12px;
   overflow: hidden;
 }
-
-/* las imágenes del carrusel */
 .custom-carousel .carousel-inner img {
   max-width: 60%;
   height: auto;
@@ -133,17 +148,6 @@ body {
   border: 2px solid #f0cd06;
 }
 
-.inicio-container {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-}
-
-/*  video de fondo */
 .video-fondo {
   position: fixed;
   top: 0;
@@ -153,33 +157,14 @@ body {
   z-index: -1;
 }
 
-h2 {
-  color: #eee239;
-  margin-bottom: 20px;
-  font-size: 3rem;
-}
-
-h3 {
-  color: #eee239;
-  margin-bottom: 20px;
-  font-size: 2rem;
-}
-
-.texto-descriptivo {
-  background-color: rgba(54, 54, 54, 0.6);
-  padding: 15px;
-  border-radius: 10px;
-}
-
-.texto-descriptivo h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.texto-descriptivo p {
-  font-size: 15px;
-  line-height: 1.5;
-  color: rgb(252, 248, 210);
+.inicio-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(243, 242, 235);
+  text-align: center;
 }
 
 /*novedades*/

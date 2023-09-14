@@ -6,9 +6,6 @@ h1 {
     text-align: center
 }
 
-
-
-
 h2 {
 
     @include textoTitulo(24px);
@@ -20,7 +17,8 @@ h2 {
     text-align: center
 }
 
-h3 { @include textoTitulo(15px);
+h3 {
+    @include textoTitulo(15px);
     color: $primary-color;
     margin-bottom: $margin-bottom;
     font-size: $font-size-base;
@@ -35,9 +33,10 @@ footer {
     text-align: center;
     padding: 5px;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     border-radius: 3rem;
+    color: $terciary-color;
 
 }
 
