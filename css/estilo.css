@@ -9,27 +9,27 @@ html {
   font-size: 62.5% !important;
 }
 
-h1 .titulo {
-  font-size: 24px;
+h1 {
+  font-size: 45px;
   font-weight: bold;
   color: #f8e10f;
-  margin: 50%;
-}
-
-.subtitulo {
-  font-size: 18px;
-  font-weight: bold;
-  color: #f8e10f;
-  margin: 50%;
+  margin-bottom: 20px;
+  font-size: "Poppins", sans-serif;
+  text-align: center;
 }
 
 h2 {
+  font-size: 24px;
+  font-weight: bold;
   color: #f8e10f;
   margin-bottom: 20px;
-  font-size: 2rem;
+  font-size: "Poppins", sans-serif;
+  text-align: center;
 }
 
 h3 {
+  font-size: 15px;
+  font-weight: bold;
   color: #f8e10f;
   margin-bottom: 20px;
   font-size: 2rem;
@@ -428,50 +428,51 @@ dd {
 
 /* Estilos para el formulario */
 #contact-form {
-  background-color: #e7c014;
+  background-image: url(../img/FOTOSLOCAL/fondoAmarillo.jpg);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgb(14, 13, 13);
+  box-shadow: 0px 0px 20px #f8e10f;
   margin: 16px;
 }
 #contact-form h2.mb-4 {
-  color: rgb(14, 13, 13);
+  color: #f8e10f;
   font-size: 4rem;
   font-weight: 400;
   font-weight: bold;
 }
-#contact-form h2.mb-4 .form-group label {
-  font-size: 2rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
 #contact-form .btn {
   margin-top: 15px;
   transition: background-color 0.3s ease-in-out;
 }
-
-.btn-primary {
+#contact-form .btn.btn-primary {
   background-color: #ca7607;
   border-color: #f1e312;
   font-size: 1.5rem;
-  margin: 3px;
+  margin: 2px;
   padding: 8px;
-  color: rgb(14, 13, 13);
 }
-
-.btn-secondary {
+#contact-form .btn.btn-secondary {
   background-color: #ca7607;
   border-color: #f1e312;
   font-size: 1.5rem;
-  margin: 3px;
+  margin: 2px;
   padding: 8px;
-  color: rgb(14, 13, 13);
 }
-
-.btn:hover {
+#contact-form .btn:hover {
   background-color: #e0ae09;
+}
+#contact-form .form-group label {
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgba(248, 224, 7, 0.6);
+}
+#contact-form .form-control {
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+  padding: 10px;
+}
+#contact-form textarea.form-control {
+  font-size: 1.6rem;
 }
 
 /*# sourceMappingURL=estilo.css.map */

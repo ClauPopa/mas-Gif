@@ -37,50 +37,56 @@
 
 /* Estilos para el formulario */
 #contact-form {
-    background-color: #e7c014;
+    background-image: url(../img/FOTOSLOCAL/fondoAmarillo.jpg);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px $terciary-color;
+    box-shadow: 0px 0px 20px $primary-color;
     margin: 16px;
 
 
     h2.mb-4 {
-        color: $terciary-color;
+        color: $primary-color;
         font-size: $textXxl;
         font-weight: 400;
-        font-weight: bold;
+        font-weight: bold;}
 
-        .form-group label {
-            font-size: $textXl;
-            font-family: $font-poppins;
+        .btn {
+            margin-top: 15px;
+            transition: background-color 0.3s ease-in-out;
+        
+            &.btn-primary {
+              background-color: #ca7607;
+              border-color: #f1e312;
+              font-size: 1.5rem;
+              margin: 2px;
+              padding: 8px;
+            }
+        
+            &.btn-secondary {
+              background-color: #ca7607;
+              border-color: #f1e312;
+              font-size: 1.5rem;
+              margin: 2px;
+              padding: 8px;
+            }
+        
+            &:hover {
+              background-color: #e0ae09;
+            }
+          }
+        
+          .form-group label {
             font-weight: bold;
+            font-size: 2rem;
+            color: $secondary-color;
+          }
+        
+          .form-control {
             margin-bottom: 10px;
+            font-size: 1.6rem;
+            padding: 10px;
+          }
+          textarea.form-control {
+            font-size: 1.6rem; 
+          }
         }
-    }
-}
-
-#contact-form .btn {
-    margin-top: 15px;
-    transition: background-color 0.3s ease-in-out;}
-
-    .btn-primary {
-        background-color: #ca7607;
-        border-color: #f1e312;
-        font-size: 1.5rem;
-        margin: 3px;
-        padding: 8px;
-        color: $terciary-color;
-
-    }
-
-        .btn-secondary {
-            background-color: #ca7607;
-            border-color: #f1e312;
-            font-size: 1.5rem;
-            margin: 3px;
-            padding: 8px;
-            color: $terciary-color;}
-
-            .btn:hover {
-                background-color: #e0ae09;}
-      

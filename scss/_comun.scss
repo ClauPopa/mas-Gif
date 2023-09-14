@@ -1,25 +1,27 @@
-
-h1 
-.titulo {
-    @include textoTitulo(24px);
-  }
-  
-  .subtitulo {
-    @include textoTitulo(18px);
-  }
-  
-     
-        
-   
-
-h2 {
+h1 {
+    @include textoTitulo(45px);
     color: $primary-color;
     margin-bottom: $margin-bottom;
-    font-size:$font-size-base;
+    font-size: $font-poppins;
+    text-align: center
 }
 
-h3 {
-    color:$primary-color;
+
+
+
+h2 {
+
+    @include textoTitulo(24px);
+
+
+    color: $primary-color;
+    margin-bottom: $margin-bottom;
+    font-size: $font-poppins;
+    text-align: center
+}
+
+h3 { @include textoTitulo(15px);
+    color: $primary-color;
     margin-bottom: $margin-bottom;
     font-size: $font-size-base;
 }
@@ -42,7 +44,7 @@ footer {
 body {
     font-family: 'Roboto', sans-serif;
     background-image: url(../img/FOTOSLOCAL/negroRadora.jpg);
-    font-size:$font-size-base;
+    font-size: $font-size-base;
     margin: 0px;
     padding: 0px;
 }
