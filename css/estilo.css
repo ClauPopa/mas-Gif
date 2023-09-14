@@ -168,54 +168,61 @@ body {
 }
 
 /*novedades*/
-.container {
-  margin-top: 50px;
+.texto-novedad {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: rgba(247, 216, 44, 0.9921568627);
+}
+
+.fecha-novedad {
+  font-size: 1rem;
+  color: #f8e10f;
 }
 
 .novedad {
-  border: 1px solid #ddd;
-  padding: 20px;
-  margin-bottom: 20px;
+  border: 1px solid rgba(248, 224, 7, 0.6);
+  padding: 4rem;
+  margin: 16px;
+  text-align: center;
+  background-color: rgba(54, 54, 54, 0.6);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
 }
-
-/*   el carrusel de imágenes */
-.carousel-inner img {
-  max-height: 500px;
-  width: auto;
-  margin: 0 auto;
+.novedad:hover {
+  transform: scale(1.1);
 }
-
-@media (max-width: 900px) and (min-width: 576px) {
-  .container {
+@media (max-width: 767px) and (min-width: 576px) {
+  .novedad {
     margin-top: 30px;
   }
-  .novedad {
-    padding: 10px;
-  }
 }
-/*  flash de "Novedades" */
+
 .flash-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 30%;
+  height: 20%;
   background-color: rgba(250, 232, 181, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: flashAnimation 4s ease infinite;
+  animation: flashAnimation 2s ease infinite;
 }
-
-.flash-text {
-  font-size: 25px;
+.flash-overlay .flash-text {
+  font-size: 4rem;
   font-weight: bold;
-  color: #4b4210;
+  color: rgb(14, 13, 13);
+  font-weight: bold;
   justify-content: center;
   align-items: center;
 }
-
-/* Animación del flash */
 @keyframes flashAnimation {
   0%, 25% {
     opacity: 1;
@@ -224,42 +231,30 @@ body {
     opacity: 0;
   }
 }
-.novedad {
-  border: 1px solid #b69b03;
-  padding: 20px;
-  margin: 5px;
-  text-align: center;
-  background-color: rgba(51, 49, 49, 0.9);
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-}
-
-@media screen and (max-width: 767px) {
-  .novedad {
-    margin-bottom: 20px;
-  }
-}
-.tituloSecundario {
-  color: rgb(179, 111, 28);
-}
 
 .colorBoton {
-  background-color: rgb(5, 44, 5);
-  color: bisque;
-  font-size: 1.5rem;
+  background-color: #e0ae09;
+  color: rgb(14, 13, 13);
+  font-size: 2rem;
+  font-weight: bold;
   margin: 3px;
+  padding: 8px;
 }
-
 .colorBoton:hover {
-  background-color: rgb(5, 75, 42);
-  color: bisque;
+  background-color: #f8e10f;
 }
 
 .fondoImg {
   background-image: url(../img/FOTOSLOCAL/fondoUno.svg);
-  border-radius: 3rem;
+  border-radius: 10px;
   margin: 5px;
+}
+
+/*   el carrusel de imágenes */
+.carousel-inner img {
+  max-height: 500px;
+  width: auto;
+  margin: 0 auto;
 }
 
 .container {
