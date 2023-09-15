@@ -65,3 +65,27 @@
       }
     }
   }
+  .btn {
+    margin-top: 15px;
+    transition: background-color 0.3s ease-in-out;
+
+    &.btn-primary {
+      background-color: #ca7607;
+      border-color: #f1e312;
+      font-size: 1.5rem;
+      margin: 2px;
+      padding: 8px;
+    }
+
+    &.btn-secondary {
+      background-color: #ca7607;
+      border-color: #f1e312;
+      font-size: 1.5rem;
+      margin: 2px;
+      padding: 8px;
+    }
+
+    &:hover {
+      background-color: #e0ae09;
+    }
+  }

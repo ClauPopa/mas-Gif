@@ -9,6 +9,20 @@ html {
   font-size: 62.5% !important;
 }
 
+.ubicacion-container .textDireccion {
+  color: #d4a806;
+  font-size: 25px;
+  margin: 16px;
+}
+
+.ubicacion-container .contenedor-direccion {
+  text-align: center;
+  font-size: 28px;
+  margin: 16px;
+  color: #d4a806;
+  font-family: "Poppins", sans-serif;
+}
+
 h1 {
   font-size: 45px;
   font-weight: bold;
@@ -56,6 +70,38 @@ body {
   padding: 0px;
 }
 
+@media screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+}
+body.error404 section {
+  text-align: center;
+  padding: 160px;
+  background-color: #eee5e5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  body.error404 section {
+    padding: 80px;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 576px) {
+  body.error404 section {
+    padding: 40px;
+    font-size: 0.8rem;
+    flex-direction: column;
+  }
+}
+
 .container-fluid {
   margin-top: 0.5px;
   background-image: url(../img/FOTOSLOCAL/amaritriangulo.jpg);
@@ -92,8 +138,8 @@ body {
 }
 .container-fluid .paraCelular .navbar-toggler-icon {
   background-color: #f8e10f;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
 }
 @media screen and (max-width: 576px) {
   .container-fluid .paraCelular .navbar-nav .nav-link {
@@ -101,7 +147,7 @@ body {
   }
 }
 .container-fluid .navbar {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .container-fluid .navbar .navbar-nav .nav-link {
   font-size: 3rem;
@@ -118,10 +164,17 @@ body {
 }
 .container-fluid .redes-sociales {
   margin-top: 30px;
+  font-size: 50px;
+  margin-inline-end: 60px;
+  color: #f8f419;
+}
+.container-fluid .green-navbar-toggler {
+  background-color: #f8e10f;
+  border-color: rgba(248, 224, 7, 0.6);
 }
 
 .texto-descriptivo {
-  background-image: url(../img/FOTOSLOCAL/fondoAtodo.svg);
+  background-image: url(../img/FOTOSLOCAL/fondoAmarillo.jpg);
   padding: 20px;
   border-radius: 10px;
   margin: 16px;
@@ -133,7 +186,8 @@ body {
 .texto-descriptivo p {
   font-size: 15px, bold, "Poppins", sans-serif;
   line-height: 1.8;
-  color: rgb(238, 236, 219);
+  color: rgb(243, 241, 121);
+  font-family: bold;
 }
 
 .custom-carousel {
@@ -163,7 +217,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(243, 242, 235);
+  color: rgb(241, 226, 113);
   text-align: center;
 }
 
@@ -181,7 +235,7 @@ body {
 
 .novedad {
   border: 1px solid rgba(248, 224, 7, 0.6);
-  padding: 4rem;
+  padding: 3rem;
   margin: 16px;
   text-align: center;
   background-color: rgba(54, 54, 54, 0.6);
@@ -191,7 +245,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  height: 90%;
   align-items: center;
 }
 .novedad:hover {
@@ -221,7 +275,8 @@ body {
   color: rgb(14, 13, 13);
   font-weight: bold;
   justify-content: center;
-  align-items: center;
+  display: flex;
+  text-align: center;
 }
 @keyframes flashAnimation {
   0%, 25% {
@@ -247,7 +302,9 @@ body {
 .fondoImg {
   background-image: url(../img/FOTOSLOCAL/fondoUno.svg);
   border-radius: 10px;
-  margin: 5px;
+  margin: 16px;
+  text-align: center;
+  padding: 5rem;
 }
 
 /*   el carrusel de imágenes */
@@ -309,75 +366,81 @@ body {
   margin-top: auto;
 }
 
-/* Estilos para la página Ubicación */
-/* Contenedor principal */
+.btn {
+  margin-top: 15px;
+  transition: background-color 0.3s ease-in-out;
+}
+.btn.btn-primary {
+  background-color: #ca7607;
+  border-color: #f1e312;
+  font-size: 1.5rem;
+  margin: 2px;
+  padding: 8px;
+}
+.btn.btn-secondary {
+  background-color: #ca7607;
+  border-color: #f1e312;
+  font-size: 1.5rem;
+  margin: 2px;
+  padding: 8px;
+}
+.btn:hover {
+  background-color: #e0ae09;
+}
+
 .ubicacion-container {
-  text-align: center; /* Centrar contenido en desktop */
-  margin-top: 20px;
-}
-
-/* Mapa */
-.mapa {
-  width: 100%; /* Ancho del mapa al 100% */
-  height: 450px;
-  margin: 16px; /* Margen responsive */
-}
-
-/* Texto de la dirección */
-.textDireccion {
   text-align: center;
-  font-size: 25px;
+  margin-top: 16px;
+}
+.ubicacion-container .mapa {
+  width: 95%;
+  height: 450px;
   margin: 16px;
-  color: rgba(248, 224, 7, 0.6);
-  font-weight: 600; /* Color para el título */
+}
+@media screen and (max-width: 768px) {
+  .ubicacion-container .mapa {
+    width: 100%;
+    height: 300px;
+    margin: 8px;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 576px) {
+  .ubicacion-container .mapa {
+    height: 200px;
+    margin: 4px;
+  }
+}
+.ubicacion-container .contenedor-direccion {
+  margin-top: 20px;
 }
 
 /* Contenedor de la dirección */
 .contenedor-direccion {
-  text-align: center; /* Alineación de la dirección */
+  text-align: center;
   margin-top: 20px;
   margin: 16px;
-  color: rgba(248, 224, 7, 0.6);
-  font-weight: 400; /* Color para el contenido de la dirección */
-}
-
-/* Estilos para la lista de horarios */
-dl {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  text-align: center;
-  padding: 16px;
-}
-
-dt {
-  font-weight: bold;
-  color: #f0cd06;
-  font-size: 18px;
-}
-
-dd {
-  margin: 0;
-  color: #ebd406;
-  font-size: 16px;
+  color: #f8e10f;
 }
 
 /* Horarios de atención */
 .horarios {
   margin-left: 40px;
-  margin: 16px; /* Margen responsive */
+  margin: 16px;
 }
 
 .horarios h3 {
-  color: #d4a806;
-  font-size: 3rem;
+  color: rgba(248, 224, 7, 0.6);
+  font-size: 28px;
   margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 
 .horarios p {
   font-size: 18px;
   margin: 5px 0;
   color: bisque;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -424,19 +487,16 @@ dd {
   margin-top: 15px;
   transition: background-color 0.3s ease-in-out;
 }
-#contact-form .btn.btn-primary {
+#contact-form .btn.btn-secondary .btn-primary {
   background-color: #ca7607;
   border-color: #f1e312;
   font-size: 1.5rem;
   margin: 2px;
   padding: 8px;
-}
-#contact-form .btn.btn-secondary {
-  background-color: #ca7607;
-  border-color: #f1e312;
-  font-size: 1.5rem;
-  margin: 2px;
-  padding: 8px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  cursor: pointer;
 }
 #contact-form .btn:hover {
   background-color: #e0ae09;

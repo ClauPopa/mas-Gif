@@ -1,36 +1,36 @@
-
 .texto-descriptivo {
-    @include estilo-compartido;
-  }
-  
-  .custom-carousel {
-    border-radius: 10px;
-    margin: 30px 12px;
-    overflow: hidden;
-  
-    .carousel-inner img {
-      max-width: 60%;
-      height: auto;
-      border-radius: 10px;
-      border: 2px solid #f0cd06;
-    }
-  }
-  .video-fondo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    object-fit: cover;
-    z-index: -1;
-    
-}
-.inicio-container {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(243, 242, 235);
-    text-align: center;
+  @include estilo-compartido;
 }
 
+.custom-carousel {
+  border-radius: 10px;
+  margin: 30px 12px;
+  overflow: hidden;
+
+  .carousel-inner img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #f0cd06;
+  }
+}
+
+.video-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+
+}
+
+.inicio-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(241, 226, 113);
+  text-align: center;
+}

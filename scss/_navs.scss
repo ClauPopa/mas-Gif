@@ -43,9 +43,8 @@
 
     .paraCelular .navbar-toggler-icon {
         background-color: $primary-color;
-
-        width: 3rem;
-        height: 3rem;
+        width: 2rem;
+        height: 2rem;
     }
 
     @media screen and (max-width: 576px) {
@@ -55,11 +54,11 @@
     }
 
     .navbar {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         .navbar-nav .nav-link {
             font-size: 3rem;
             color: $secondary-color;
-    
+               
     }
 }
 
@@ -78,7 +77,14 @@
 
     .redes-sociales {
         margin-top: 30px;
+        font-size: 50px;
+    margin-inline-end: 60px;
+    color: #f8f419;
      
+    }
+    .green-navbar-toggler {
+        background-color: $primary-color;
+        border-color: $secondary-color;
     }
 
 }
