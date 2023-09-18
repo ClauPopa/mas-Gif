@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&family=Roboto:wght@100&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -78,6 +79,7 @@ body {
     padding: 10px 20px;
   }
 }
+
 body.error404 section {
   text-align: center;
   padding: 160px;
@@ -88,12 +90,14 @@ body.error404 section {
   display: flex;
   flex-direction: column;
 }
+
 @media screen and (max-width: 768px) {
   body.error404 section {
     padding: 80px;
     font-size: 1rem;
   }
 }
+
 @media screen and (max-width: 768px) and (max-width: 576px) {
   body.error404 section {
     padding: 40px;
@@ -108,15 +112,18 @@ body.error404 section {
   border-radius: 1rem;
   border-bottom: 8px #e0ae09 #e0ae09 solid;
 }
+
 .container-fluid a {
   font-size: 2rem;
   font-weight: bold;
   margin-right: 60px;
   color: #f8e10f;
 }
+
 .container-fluid .logo {
   width: 180px;
 }
+
 .container-fluid .fuentesNav {
   font-size: 4rem;
   padding-left: 3rem;
@@ -124,50 +131,61 @@ body.error404 section {
   justify-content: left;
   font-family: "Roboto", sans-serif;
 }
+
 @media screen and (max-width: 576px) {
   .container-fluid .fuentesNav {
     font-size: 4rem;
     padding-right: 5%;
   }
 }
+
 .container-fluid .nav-link active {
   color: #f8e10f;
 }
+
 .container-fluid .nav-link active .nav-link {
   color: rgba(248, 224, 7, 0.6);
 }
+
 .container-fluid .paraCelular .navbar-toggler-icon {
   background-color: #f8e10f;
   width: 2rem;
   height: 2rem;
 }
+
 @media screen and (max-width: 576px) {
   .container-fluid .paraCelular .navbar-nav .nav-link {
     font-size: 14px;
   }
 }
+
 .container-fluid .navbar {
   margin-bottom: 20px;
 }
+
 .container-fluid .navbar .navbar-nav .nav-link {
   font-size: 3rem;
   color: rgba(248, 224, 7, 0.6);
 }
+
 .container-fluid .menuTotal {
   font-size: 1rem;
   padding-left: 2rem;
   display: flex;
 }
+
 .container-fluid .dropdown-item {
   font-size: 2rem;
   background-color: #f8e10f;
 }
+
 .container-fluid .redes-sociales {
   margin-top: 30px;
   font-size: 50px;
   margin-inline-end: 60px;
   color: #f8f419;
 }
+
 .container-fluid .green-navbar-toggler {
   background-color: #f8e10f;
   border-color: rgba(248, 224, 7, 0.6);
@@ -179,10 +197,12 @@ body.error404 section {
   border-radius: 10px;
   margin: 16px;
 }
+
 .texto-descriptivo h1 {
   font-size: 36px;
   margin-bottom: 10px;
 }
+
 .texto-descriptivo p {
   font-size: 15px, bold, "Poppins", sans-serif;
   line-height: 1.8;
@@ -195,6 +215,7 @@ body.error404 section {
   margin: 30px 12px;
   overflow: hidden;
 }
+
 .custom-carousel .carousel-inner img {
   max-width: 60%;
   height: auto;
@@ -248,9 +269,11 @@ body.error404 section {
   height: 90%;
   align-items: center;
 }
+
 .novedad:hover {
   transform: scale(1.1);
 }
+
 @media (max-width: 767px) and (min-width: 576px) {
   .novedad {
     margin-top: 30px;
@@ -269,6 +292,7 @@ body.error404 section {
   align-items: center;
   animation: flashAnimation 2s ease infinite;
 }
+
 .flash-overlay .flash-text {
   font-size: 4rem;
   font-weight: bold;
@@ -278,11 +302,16 @@ body.error404 section {
   display: flex;
   text-align: center;
 }
+
 @keyframes flashAnimation {
-  0%, 25% {
+
+  0%,
+  25% {
     opacity: 1;
   }
-  50%, 75% {
+
+  50%,
+  75% {
     opacity: 0;
   }
 }
@@ -295,6 +324,7 @@ body.error404 section {
   margin: 3px;
   padding: 8px;
 }
+
 .colorBoton:hover {
   background-color: #f8e10f;
 }
@@ -317,6 +347,7 @@ body.error404 section {
 .container {
   padding: 4rem 0;
 }
+
 .container .product-card {
   border: 1px solid #b69b03;
   margin: 16px;
@@ -333,35 +364,42 @@ body.error404 section {
   align-items: center;
   transition: 0.3s;
 }
+
 @media screen and (min-width: 768px) {
   .container .product-card:hover {
     transform: scale(1.1);
   }
 }
+
 @media screen and (max-width: 767px) {
   .container .product-card:hover {
     transform: none;
   }
 }
+
 .container .product-card img {
   max-width: 60%;
   height: auto;
   border-radius: 5px;
   margin-bottom: 1rem;
 }
+
 .container .product-card img:hover {
   transform: scale(1.03);
 }
+
 .container .product-card h3 {
   color: #f8e10f;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+
 .container .product-card p {
   color: #f8e10f;
   margin-bottom: 1rem;
   font-size: 1.4rem;
 }
+
 .container .product-card button {
   margin-top: auto;
 }
@@ -370,6 +408,7 @@ body.error404 section {
   margin-top: 15px;
   transition: background-color 0.3s ease-in-out;
 }
+
 .btn.btn-primary {
   background-color: #ca7607;
   border-color: #f1e312;
@@ -377,6 +416,7 @@ body.error404 section {
   margin: 2px;
   padding: 8px;
 }
+
 .btn.btn-secondary {
   background-color: #ca7607;
   border-color: #f1e312;
@@ -384,6 +424,7 @@ body.error404 section {
   margin: 2px;
   padding: 8px;
 }
+
 .btn:hover {
   background-color: #e0ae09;
 }
@@ -392,11 +433,13 @@ body.error404 section {
   text-align: center;
   margin-top: 16px;
 }
+
 .ubicacion-container .mapa {
   width: 95%;
   height: 450px;
   margin: 16px;
 }
+
 @media screen and (max-width: 768px) {
   .ubicacion-container .mapa {
     width: 100%;
@@ -404,12 +447,14 @@ body.error404 section {
     margin: 8px;
   }
 }
+
 @media screen and (max-width: 768px) and (max-width: 576px) {
   .ubicacion-container .mapa {
     height: 200px;
     margin: 4px;
   }
 }
+
 .ubicacion-container .contenedor-direccion {
   margin-top: 20px;
 }
@@ -447,20 +492,25 @@ body.error404 section {
   .contacto-container {
     text-align: center;
   }
+
   .contacto-container .contacto-container .row {
     justify-content: space-between;
   }
+
   .contacto-container .contacto-container .row .contacto-container .col-lg-6 {
     width: 48%;
     margin-right: 2%;
   }
+
   .contacto-container .contacto-container .row .contacto-container .col-lg-6 .contacto-container .form-group {
     margin-bottom: 20px;
   }
+
   .contacto-container .contacto-container .row .contacto-container .col-lg-6 .contacto-container .form-group .contacto-container .btn {
     margin-top: 30px;
   }
 }
+
 /*  formulario */
 /* Estilos para la imagen */
 .img-fluid {
@@ -477,16 +527,19 @@ body.error404 section {
   box-shadow: 0px 0px 20px #f8e10f;
   margin: 16px;
 }
+
 #contact-form h2.mb-4 {
   color: #f8e10f;
   font-size: 4rem;
   font-weight: 400;
   font-weight: bold;
 }
+
 #contact-form .btn {
   margin-top: 15px;
   transition: background-color 0.3s ease-in-out;
 }
+
 #contact-form .btn.btn-secondary .btn-primary {
   background-color: #ca7607;
   border-color: #f1e312;
@@ -498,19 +551,23 @@ body.error404 section {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   cursor: pointer;
 }
+
 #contact-form .btn:hover {
   background-color: #e0ae09;
 }
+
 #contact-form .form-group label {
   font-weight: bold;
   font-size: 2rem;
   color: rgba(248, 224, 7, 0.6);
 }
+
 #contact-form .form-control {
   margin-bottom: 10px;
   font-size: 1.6rem;
   padding: 10px;
 }
+
 #contact-form textarea.form-control {
   font-size: 1.6rem;
 }
