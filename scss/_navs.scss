@@ -32,7 +32,7 @@
     }
 
     .nav-link active {
-        color: $primary-color;
+        color: $secondary-color;
 
         .nav-link {
             color: $secondary-color;
@@ -41,12 +41,7 @@
 
     }
 
-    .paraCelular .navbar-toggler-icon {
-        background-color: $primary-color;
-        width: 2rem;
-        height: 2rem;
-    }
-
+   
     @media screen and (max-width: 576px) {
         .paraCelular .navbar-nav .nav-link {
             font-size: 14px;
@@ -82,9 +77,14 @@
     color: #f8f419;
      
     }
-    .green-navbar-toggler {
-        background-color: $primary-color;
-        border-color: $terciary-color;
+    
+     .navbar-toggler-icon {
+        background-color: $secondary-color;
+        border-color: $primary-color;
+        color: $terciary-color;
+        width: 3rem;
+        height: 3rem;
+
     }
 
 }

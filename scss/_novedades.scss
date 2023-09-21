@@ -26,12 +26,18 @@
     @include color-boton-style;
   }
   
-  .fondoImg {
-    @include fondo-img-style;
-  }
+
   /*   el carrusel de imágenes */
 .carousel-inner img {
     max-height: 500px;
     width: auto;
-    margin: 0 auto;
+    margin: auto;
+}
+//ARREGLO DE LA VISIBILIDAD REFERIDA POR EL TUTOR
+.fondoImg {
+  @include fondo-img-style;
+  .textoMensaje { 
+    @include texto-mensaje-style;
+
+    }
 }

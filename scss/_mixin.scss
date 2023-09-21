@@ -54,7 +54,7 @@
   }
 }
 
-// novades
+// novedades
 // Mixin para el estilo común de las tarjetas de novedades.
 @mixin novedad-card-style {
   border: 1px solid $border-color;
@@ -91,7 +91,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: flashAnimation 2s ease infinite;
+  animation: flashAnimation 1s ease infinite;
 
   .flash-text {
     font-size: $textXxl;
@@ -107,7 +107,7 @@
 
     0%,
     25% {
-      opacity: 1;
+      opacity: 0.2;
     }
 
     50%,
@@ -138,4 +138,22 @@
   margin: 16px;
   text-align: center;
   padding: 5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  & h1{font-size: 5rem; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    margin-bottom: 1rem;
+}
+  }
+
+@mixin texto-mensaje-style {
+  background-color: rgb(252, 250, 226);
+  text-align: center;
+  font-family: $font-family;
+  border-radius: 5px;
+  color: $terciary-color;
+  font-weight: $fontW;
+
 }
