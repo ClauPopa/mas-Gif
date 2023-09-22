@@ -4,12 +4,14 @@
     background-image: url(../img/FOTOSLOCAL/amaritriangulo.jpg);
     border-radius: 1rem;
     border-bottom: 8px $hover-bg #e0ae09 solid;
+
     a {
         font-size: $textXl;
         font-weight: bold;
         margin-right: 60px;
-        color:$primary-color;
+        color: $primary-color;
     }
+
     .logo {
         width: $logo-width;
     }
@@ -20,14 +22,14 @@
         display: flex;
         justify-content: left;
         font-family: 'Roboto', sans-serif;
-       
+
     }
 
     @media screen and (max-width: 576px) {
         .fuentesNav {
             font-size: $textXxl;
             padding-right: 5%;
-         
+
         }
     }
 
@@ -41,7 +43,7 @@
 
     }
 
-   
+
     @media screen and (max-width: 576px) {
         .paraCelular .navbar-nav .nav-link {
             font-size: 14px;
@@ -50,12 +52,13 @@
 
     .navbar {
         margin-bottom: 20px;
+
         .navbar-nav .nav-link {
             font-size: 3rem;
             color: $secondary-color;
-               
+
+        }
     }
-}
 
     .menuTotal {
         font-size: 1rem;
@@ -63,7 +66,7 @@
         display: flex;
     }
 
-   
+
 
     .dropdown-item {
         font-size: 2rem;
@@ -73,12 +76,12 @@
     .redes-sociales {
         margin-top: 30px;
         font-size: 50px;
-    margin-inline-end: 60px;
-    color: #f8f419;
-     
+        margin-inline-end: 60px;
+        color: #f8f419;
+
     }
-    
-     .navbar-toggler-icon {
+
+    .navbar-toggler-icon {
         background-color: $secondary-color;
         border-color: $primary-color;
         color: $terciary-color;
